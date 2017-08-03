@@ -1,11 +1,11 @@
 {
-  "name": "angular-material-time-picker",
-  "version": "1.0.6",
-  "description": "Material design time picker for 12 hour and 24 hour time",
+  "name": "bc-angular-material-time-picker",
+  "version": "1.0.7",
+  "description": "BlueCrew fork to make it work with angular 1.6 Material design time picker for 12 hour and 24 hour time",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/classlinkinc/angular-material-time-picker.git"
+    "url": "git://github.com/BlueCrew/angular-material-time-picker"
   },
   "keywords": [
     "angular",
