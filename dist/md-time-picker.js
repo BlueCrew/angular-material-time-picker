@@ -43,7 +43,7 @@
       }
       return;
     }
-    if (num > max) 
+    if (num > max)
       return String(num)[0];
     else if (!isNaN(num)) {
       if (value.length === 2 || (blur && type === 'MM'))
@@ -539,7 +539,7 @@
 
           };
 
-          this.init = function() {
+          this.$onInit = function() {
 
             self.type = self.type || "hours";
 
@@ -569,8 +569,9 @@
                 break;
             }
           };
-
-          this.init();
+          if (angular.version.major === 1 && angular.version.minor < 5) {
+            this.$onInit();
+          }
         }],
         controllerAs: "clock",
         link: function(scope, element, attrs, ctrl) {
